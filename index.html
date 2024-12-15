@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Evento Geek</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            float: left;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .signup-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .signup-link a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Administração do Evento Geek</h1>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <a href="index.html">Página Inicial</a>
+        <a href="cadastro-usuario.html">Cadastro de Usuário</a>
+        <a href="cadastro-objetos.html">Cadastro de Objetos</a>
+        <a href="index.html">Admin</a> <!-- Link para a página inicial (login) -->
+    </nav>
+
+    <div class="container">
+        <h2>Login</h2>
+        <form action="#" method="POST">
+            <div class="input-group">
+                <label for="login-username">Usuário:</label>
+                <input type="text" id="login-username" name="login-username" placeholder="Digite seu nome de usuário" required>
+            </div>
+
+            <div class="input-group">
+                <label for="login-password">Senha:</label>
+                <input type="password" id="login-password" name="login-password" placeholder="Digite sua senha" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Entrar</button>
+        </form>
+
+        <div class="signup-link">
+            <p>Não tem uma conta ainda?</p>
+            <a href="cadastro-usuario.html">Cadastre-se</a>
+            <a href="cadastro-objetos.html">Cadastre objetos para venda</a>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Autor: Luan - <a href="sobre-autor.html" style="color: white;">Sobre o Autor</a></p>
+    </footer>
+
+</body>
+</html>

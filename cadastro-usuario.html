@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário - Evento Geek</title>
+    <style>
+        /* Estilos básicos para o layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-group input,
+        .input-group button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .input-group button {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        .input-group button:hover {
+            background-color: #555;
+        }
+
+        .table-container {
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        td[contenteditable="true"] {
+            background-color: #e9e9e9;
+        }
+
+        .btn {
+            padding: 5px 10px;
+            margin: 2px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn-edit {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .btn-delete {
+            background-color: #f44336;
+            color: white;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Cadastro de Usuário - Evento Geek</h1>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <a href="index.html">Página Inicial</a>
+        <a href="cadastro-usuario.html">Cadastro de Usuário</a>
+        <a href="cadastro-objetos.html">Cadastro de Objetos</a>
+        <a href="index.html">Admin</a>
+    </nav>
+
+    <div class="container">
+        <h2>Cadastro de Usuário</h2>
+        
+        <!-- Formulário para cadastro de usuário -->
+        <form action="#" method="POST">
+            <div class="input-group">
+                <label for="usuario-nome">Nome:</label>
+                <input type="text" id="usuario-nome" name="usuario-nome" placeholder="Nome do usuário" required>
+            </div>
+
+            <div class="input-group">
+                <label for="usuario-email">E-mail:</label>
+                <input type="email" id="usuario-email" name="usuario-email" placeholder="E-mail do usuário" required>
+            </div>
+
+            <div class="input-group">
+                <label for="usuario-senha">Senha:</label>
+                <input type="password" id="usuario-senha" name="usuario-senha" placeholder="Senha" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Cadastrar Usuário</button>
+        </form>
+
+        <!-- Tabela com usuários cadastrados -->
+        <div class="table-container">
+            <h3>Lista de Usuários Cadastrados</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Senha</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td contenteditable="true">João Silva</td>
+                        <td contenteditable="true">joao@exemplo.com</td>
+                        <td contenteditable="true">1234</td>
+                        <td>
+                            <button class="btn btn-edit">Editar</button>
+                            <button class="btn btn-delete">Apagar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true">Maria Oliveira</td>
+                        <td contenteditable="true">maria@exemplo.com</td>
+                        <td contenteditable="true">abcd</td>
+                        <td>
+                            <button class="btn btn-edit">Editar</button>
+                            <button class="btn btn-delete">Apagar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true">Carlos Souza</td>
+                        <td contenteditable="true">carlos@exemplo.com</td>
+                        <td contenteditable="true">senha123</td>
+                        <td>
+                            <button class="btn btn-edit">Editar</button>
+                            <button class="btn btn-delete">Apagar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Autor: Luan - <a href="sobre-autor.html">Sobre o Autor</a></p>
+    </footer>
+
+</body>
+</html>
